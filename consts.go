@@ -6,4 +6,5 @@ const (
 	ServiceNameFormGenerator    = "conf.regFormGen"
 	ServiceNameRegisterWithForm = "conf.regWithForm"
 	ServiceNameCookieGen        = "conf.cookieGen"
+	ServiceNameAuthentication   = "conf.authentication"
 )
