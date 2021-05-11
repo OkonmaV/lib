@@ -21,6 +21,9 @@ func GetCookie(cookRaw string, name string) *Cookie {
 	for _, c := range cookSplitted {
 		i := strings.Index(c, "=")
 		if n := c[:i]; n == name {
+			if n == "" {
+				break
+			}
 			res.Value = c[i+1:]
 			return res
 		}
